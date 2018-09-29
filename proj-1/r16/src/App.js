@@ -10,7 +10,7 @@ class App1 extends Component {
       {/* 2. JSX, not html. looks like html, get trascompiled into JS. */}
         <header className="App-header">
           <h1 className="App-title">React 16 _ Demo App</h1>
-          <Comp1 />
+          <Comp1 arg1="argument-1"/>
         </header>      
       </div>
     );
