@@ -37,12 +37,12 @@ render() {
 
 // 3. Pass method ref - when "change react version button" is clicked - App comp PARENT
 button1_method = () => {
-  console.log("button 1 clicked without arg");
-  //this.setState(this.reactv = '16_v1');
+  console.log("button 1 clicked without arg.");
+  this.setState({reactv : '16_v1'});
 }
 button2_method = (arg) => {
   console.log("button 2 clicked with arg : " + arg);
-  //this.setState(this.reactv = '16_v1');
+  this.setState({reactv : '16_v1'});
 }
 
 // 4.1 Pass method ref - when user1 is clicked - User Comp - Children - Addional step: pass method in props.Click1
