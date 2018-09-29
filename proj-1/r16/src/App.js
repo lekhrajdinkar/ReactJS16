@@ -17,10 +17,11 @@ render() {
     <div className="App">
     
       <header>
-      <h1 className="App-title">React, version : {this.reactv}  Demo App</h1>
+      <h1 className="App-title">React, version : {this.reactv}</h1>
 
-      <button onClick={this.button1_method()}>change react version 1</button>
-      <button onClick={this.button2_method(this,'16_v2')}>change react version 2</button>
+      <button onClick={()=>this.button1_method()}>change react version 1</button><br></br>
+      <button onClick={this.button2_method.bind(this,'16_v2')}>change react version 2</button><br></br>
+      <button onClick={() => this.button2_method('16_v2')}>change react version 3</button><br></br>
 
       <User> hello - between comp1 tag </User> {/* props.children*/} 
 
@@ -28,7 +29,7 @@ render() {
        {/* user 2*/} <User name={this.state.users[1].name} age={this.state.users[1].age} twoWayBind={this.event1_method}/>
    
       </header>      
-    </div>
+    </div> 
   );
 }
 
@@ -40,7 +41,7 @@ button1_method = () => {
   //this.setState(this.reactv = '16_v1');
 }
 button2_method = (arg) => {
-  console.log("button 2 clicked with arg" + arg);
+  console.log("button 2 clicked with arg : " + arg);
   //this.setState(this.reactv = '16_v1');
 }
 
