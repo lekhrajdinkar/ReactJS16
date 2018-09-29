@@ -16,7 +16,7 @@ render() {
   return (
     <div className="App">
     
-      <header className="App-header">
+      <header>
       <h1 className="App-title">React, version : {this.reactv}  Demo App</h1>
 
       <button onClick={this.button1_method()}>change react version 1</button>
@@ -25,7 +25,7 @@ render() {
       <User> hello - between comp1 tag </User> {/* props.children*/} 
 
        {/* user 1*/} <User name={this.state.users[0].name} age={this.state.users[0].age} click1={this.event0_method}/>
-       {/* user 2*/} <User name={this.state.users[1].name} age={this.state.users[1].age} />
+       {/* user 2*/} <User name={this.state.users[1].name} age={this.state.users[1].age} twoWayBind={this.event1_method}/>
    
       </header>      
     </div>
