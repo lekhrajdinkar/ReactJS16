@@ -11,6 +11,7 @@ class App1 extends Component {
         <header className="App-header">
           <h1 className="App-title">React 16 _ Demo App</h1>
           <Comp1 arg1="argument-1"/>
+          <Comp1 arg1="argument-1"> hello - between comp1 tag</Comp1>
         </header>      
       </div>
     );
