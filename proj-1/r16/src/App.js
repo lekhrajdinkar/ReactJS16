@@ -17,7 +17,7 @@ render() {
     <div className="App">
     
       <header>
-      <h1 className="App-title">React, version : {this.reactv}</h1>
+      <h1 className="App-title">React, version : {this.state.reactv}</h1>
 
       <button onClick={this.button1_method}>change react version 1</button><br></br>
       <button onClick={this.button2_method.bind(this,'16_v2')}>change react version 2</button><br></br>
