@@ -7,7 +7,8 @@ class App1 extends Component {
  // 2. Component state
  state = {
   users: [ { name: 'lekhraj', age: 27 },    { name: 'Manish Bobde', age: 28 } ],
-  reactv : '16'
+  reactv : '16',
+  open : true
 }
 
 // ------ A. Template ------
@@ -19,8 +20,15 @@ render() {
       <header>
       <h1 className="App-title">React, version : {this.state.reactv}</h1>
 
+<button onClick={this.toggle_method}>toggle</button><br></br>
+{
+ this.state.open === true ?
+<div>
       <button onClick={this.button1_method}>change react version 1</button><br></br>
       <button onClick={this.button2_method.bind(this,'16_v2')}>change react version 2</button><br></br>
+</div> : null
+}
+
       <button onClick={() => this.button2_method('16_v2')}>change react version 3</button><br></br>
 
       <User> hello - between comp1 tag </User> {/* props.children*/} 
@@ -62,7 +70,12 @@ event1_method = (event) => {
     users: [ { name: event.target.value, age: 27 },    { name: event.target.value , age: 28 } ]
   } )
 }
-//1.1 render
+
+// 6. Conditionally hide. 
+toggle_method = () => {
+  const toggle = this.state.open;
+  this.setState({open : !toggle})
+}
   
 }
 
