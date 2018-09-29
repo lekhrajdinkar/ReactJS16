@@ -7,6 +7,7 @@ class App1 extends Component {
  // 2. Component state
  state = {
   users: [ { name: 'lekhraj', age: 27 },    { name: 'Manish Bobde', age: 28 } ],
+  users2: [ { name: 'Himanish', age: 30 },    { name: 'Varun', age: 30 } ],
   reactv : '16',
   open : true
 }
@@ -22,20 +23,31 @@ render() {
 
 <button onClick={this.toggle_method}>toggle</button><br></br>
 {
+  // Conditional show button using ternery opartor - no ngIf like angular pure JS
  this.state.open === true ?
 <div>
       <button onClick={this.button1_method}>change react version 1</button><br></br>
       <button onClick={this.button2_method.bind(this,'16_v2')}>change react version 2</button><br></br>
 </div> : null
 }
-
+ 
       <button onClick={() => this.button2_method('16_v2')}>change react version 3</button><br></br>
 
       <User> hello - between comp1 tag </User> {/* props.children*/} 
 
        {/* user 1*/} <User name={this.state.users[0].name} age={this.state.users[0].age} click1={this.event0_method}/>
        {/* user 2*/} <User name={this.state.users[1].name} age={this.state.users[1].age} twoWayBind={this.event1_method}/>
-   
+       
+       <br></br>Iterate over Users2, no ngFor like angular pure JS.
+<div>
+ {
+  // Iterate over Users2, no ngFor like angular pure JS.
+   this.state.users2.map( 
+      (eachUser) => {return <User name={eachUser.name} age={eachUser.age}/>}
+     )
+ }
+</div>
+
       </header>      
     </div> 
   );

@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "build": "y",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
