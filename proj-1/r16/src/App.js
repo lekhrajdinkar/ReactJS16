@@ -29,7 +29,7 @@ class App1 extends Component {
             this.state.users2.map(
               (eachUser, index) => { 
                 return 
-                < User 
+                <User 
                 name={eachUser.name} 
                 age={eachUser.age} 
                 twoWayBind_2={ (event) => {this.event2_method(event, index)} } 
@@ -63,12 +63,14 @@ class App1 extends Component {
 
           <User> hello - between comp1 tag </User> {/* props.children*/}
 
+
           <br></br><h1 className="App-header"> Iterate over Users 1 - hardcoded no iteration. </h1>
           {/* user 1*/} <User name={this.state.users[0].name} age={this.state.users[0].age} click1={this.event0_method} />
           {/* user 2*/} <User name={this.state.users[1].name} age={this.state.users[1].age} twoWayBind={this.event1_method} />
 
           <br></br><h1 className="App-header"> Iterate over Users2, no ngFor like angular. React is pure JS. </h1>
-          <button className="btn-blue" onClick={this.toggle_userList2_method}>toggle users list 2 </button><br></br>          
+          <button className="btn-blue" onClick={this.toggle_userList2_method}>toggle users list 2 </button><br></br>
+          
           {userlist2}
 
         </header>
