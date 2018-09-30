@@ -21,7 +21,10 @@
 - `class Cmp extends Component { render () { return <div>some JSX</div> } } `
 
 ***
-
+### Rendering :
+1. `setState()` is called, it marks the component as dirty.
+2. `render()` method is called and returns a new `virtual DOM structure` of the component.
+3. React changes `real DOM nodes` only if there is difference in Virtual DOM.
 
 
 
