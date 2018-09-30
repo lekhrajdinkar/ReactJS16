@@ -9,7 +9,7 @@
 1. JSX defines which HTML code React should render to the real DOM in the end.
 2. Follows camelin format. eg: `onClick`, not `onclick`
 3. `class` is reserved keyword hence uses `className`.
-4. return (<div> ... </div>); - only one root element.
+4. `return (<div> ... </div>);` - only one root element.
 5. `<react1> abc </react1>` : `abc` will be accessible in `props.children`
 6. state and props are special properties of Component Class and their values get changed then react will rerender Virtual DOM.
 ***
