@@ -57,7 +57,7 @@ function visibilityFilter(state = 'SHOW_ALL', action) {
 2. The only way to change the state is to `emit an action` (an JS object describing what happened)
 3. state tree is transformed `pure function` (reducers in redux). 
 
-![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/proj-1/NOTES/asset/redux1.png)
+![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/proj-1/NOTES/asset/redux1.jpg)
 
 ***
 Reference:
