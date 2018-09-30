@@ -2,7 +2,7 @@
 
 ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/proj-1/NOTES/asset/1.jpg)
 
-![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/proj-1/NOTES/asset/1.jpg)
+![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/proj-1/NOTES/asset/2.jpg)
 
 ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/proj-1/NOTES/asset/3.jpg)
 
