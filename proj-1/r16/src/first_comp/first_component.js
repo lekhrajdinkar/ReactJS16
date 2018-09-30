@@ -15,7 +15,7 @@ const User = (props) => {
             4. value={props.name} 
             */}
             <input type="text" onChange={props.twoWayBind}/>
-            {props.name}
+            {/* {props.name} */}
 
         </div>
     );

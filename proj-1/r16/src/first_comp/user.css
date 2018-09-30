@@ -5,3 +5,20 @@ box-shadow: 0 3px 3px #CCC;
 padding:2%;
 text-align: center;
 }
+
+.btn-green{
+    width:60%;
+    margin:5px;
+    box-shadow: 0 3px 3px rgb(169, 221, 73);
+    padding:2%;
+    text-align: center;
+    }
+
+    .btn-blue{
+        width:20%;
+        margin:10px;
+        box-shadow: 0 3px 3px rgb(120, 138, 240);
+        padding:2%;
+        text-align: center;
+        font-size: large;
+        }
