@@ -3,7 +3,7 @@
 > - [reactjs.org](https://reactjs.org/)
 > - [codePen online tool](https://codepen.io/)
 
-1. React really is just a library(not framework) for creating components in its core.
+1. React is just a library(not framework) for creating components in its core.
 2. could be depicted as a component tree - having one root component ("App") and then an potentially infinite amount of nested child components.
 3. open-source project created by Facebook.
 4. Built with ES6 (next Gen JS, 2015, lots of new prgming construct)
@@ -21,6 +21,7 @@ Revise Fundamentals:
 
 > User.js - child , App.js - Parent
 
-https://github.com/lekhrajdinkar/ReactJS16/tree/master/proj-1/r16
+Github : https://github.com/lekhrajdinkar/ReactJS16/tree/master/proj-1/r16
+
 deployed on : https://react16-p1.firebaseapp.com/
 
