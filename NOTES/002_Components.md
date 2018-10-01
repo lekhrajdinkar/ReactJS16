@@ -38,17 +38,17 @@
 
 3. `child to parent` -->`lift up state` : Pass down method reference to child component from parent and event in child to manipulate state in Parent.
  > 1. Define js method and assign to reference - `event1_method`
- ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc1.png)
+ ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc1.PNG)
 
  > 2. Pass down reference as props to child comp - `<User>` here.
- ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc2.png)
+ ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc2.PNG)
 
  > 3. inside User Comp : <input type="text" onChange={props.twoWayBind}/>
 
  > - `onChange` accepts callback method which has to be called whenever event triggered. `event1_method = (event) => {...} ` of parent comp will be callback method here which accepts event data coming from child component - User here.
 
  > 4. `event.target.value` -->
- ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc3.png)
+ ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc3.PNG)
 
 4. Among siblings --> lift up state uptocommon ancestor from Child-1 to parent. pass down state via props to child-2 from parent. child-1 and child-2 are sibling here.
 
