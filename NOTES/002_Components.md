@@ -33,9 +33,24 @@
 
 ### Component communications
 1. [state and props](https://github.com/lekhrajdinkar/ReactJS16/blob/master/proj-1/NOTES/002_state_and_props.md)
-2. send input to component and acces it via `this.proc` (Props are Read-Only).
-3. parent to child, child to parent, among siblings.
-4. `lift up state` in parent and event in child to manipulate state in Parent.
+
+2. `parent to child` --> Pass down properties and object-references to child component from parent. Child will acces it from its props -`this.props` (Props are Read-Only).
+
+3. `child to parent` -->`lift up state` : Pass down method reference to child component from parent and event in child to manipulate state in Parent.
+ > 1. Define js method and assign to reference - `event1_method`
+ ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc1.png)
+
+ > 2. Pass down reference as props to child comp - `<User>` here.
+ ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc2.png)
+
+ > 3. inside User Comp : <input type="text" onChange={props.twoWayBind}/>
+
+ > - `onChange` accepts callback method which has to be called whenever event triggered. `event1_method = (event) => {...} ` of parent comp will be callback method here which accepts event data coming from child component - User here.
+
+ > 4. `event.target.value` -->
+ ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc3.png)
+
+4. Among siblings --> lift up state uptocommon ancestor from Child-1 to parent. pass down state via props to child-2 from parent. child-1 and child-2 are sibling here.
 
 
 
