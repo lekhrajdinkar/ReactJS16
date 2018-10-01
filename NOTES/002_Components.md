@@ -37,13 +37,16 @@
 2. `parent to child` --> Pass down properties and object-references to child component from parent. Child will acces it from its props -`this.props` (Props are Read-Only).
 
 3. `child to parent` -->`lift up state` : Pass down method reference to child component from parent and event in child to manipulate state in Parent.
- > 1. Define js method and assign to reference - `event1_method`
+ > 1. Define js method and assign it to reference - `event1_method`
  ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc1.PNG)
 
  > 2. Pass down reference as props to child comp - `<User>` here.
  ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc2.PNG)
 
- > 3. inside User Comp : <input type="text" onChange={props.twoWayBind}/>
+ > 3. inside User Comp : 
+ ```
+ <input type="text" onChange={props.twoWayBind}/>
+```
 
  > - `onChange` accepts callback method which has to be called whenever event triggered. `event1_method = (event) => {...} ` of parent comp will be callback method here which accepts event data coming from child component - User here.
 
