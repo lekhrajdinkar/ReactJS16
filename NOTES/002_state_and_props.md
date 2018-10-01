@@ -9,9 +9,9 @@
 -   parent passes the data down as props.
 -   parent receives data from child as event data which triggered at child comp. 
 
-![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/proj-1/NOTES/asset/20180930_121152.png)
+![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/20180930_121152.png)
 
-![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/proj-1/NOTES/asset/20180930_121931.png)
+![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/20180930_121931.png)
 
 ***
 ### Key points:
