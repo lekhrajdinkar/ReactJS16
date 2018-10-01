@@ -1,4 +1,0 @@
-js lib:
-
-https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.production.
-https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.5.1/umd/react-dom.production.min.js
