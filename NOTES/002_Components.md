@@ -48,12 +48,13 @@
  <input type="text" onChange={props.twoWayBind}/>
 ```
 
- > - `onChange` accepts callback method which has to be called whenever event triggered. `event1_method = (event) => {...} ` of parent comp will be callback method here which accepts event data coming from child component - User here.
+ > - `onChange` accepts callback method which has to be called whenever event triggered. 
+ > - `event1_method = (event) => {...} ` of parent comp will be callback method here which accepts event data coming from child component - User here.
 
  > 4. `event.target.value` -->
  ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc3.PNG)
 
-4. Among siblings --> lift up state uptocommon ancestor from Child-1 to parent. pass down state via props to child-2 from parent. child-1 and child-2 are sibling here.
+4. `Among siblings` --> lift up state uptocommon ancestor from Child-1 to parent. pass down state via props to child-2 from parent. child-1 and child-2 are sibling here.
 
 
 
