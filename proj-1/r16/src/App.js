@@ -28,13 +28,13 @@ class App1 extends Component {
             // Iterate over Users2, no ngFor like angular pure JS.
             this.state.users2.map(
               (eachUser, index) => { 
-                return 
-                <User 
+                return ( <User 
+                key={eachUser.name} 
                 name={eachUser.name} 
                 age={eachUser.age} 
                 twoWayBind_2={ (event) => {this.event2_method(event, index)} } 
-                /> 
-            }
+                /> );
+              }
             )
           }
         </div>
@@ -140,8 +140,11 @@ class App1 extends Component {
   }
 
   toggle_userList2_method = () => {
+    console.log("toggle_userList2_method");
     const toggle = this.state.showUserList2;
+    console.log(this.state.showUserList2);
     this.setState({ showUserList2: !toggle })
+    console.log(this.state.showUserList2);
   }
 
 }

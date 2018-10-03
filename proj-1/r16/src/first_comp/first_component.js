@@ -14,7 +14,7 @@ const User = (props) => {
             3. onChange="{props.event1}" - use event1 in app.js
             4. value={props.name} 
             */}
-            <input type="text" onChange={props.twoWayBind}/>
+            <input type="text" onChange={props.twoWayBind_2}/>
             {/* {props.name} */}
 
         </div>
