@@ -71,5 +71,11 @@ eg: JSX of Class Component.
 
 4. `Among siblings` --> lift up state uptocommon ancestor from Child-1 to parent. pass down state via props to child-2 from parent. child-1 and child-2 are sibling here.
 
+***
+### Program
+1. Container Component > Persons > person
+2. Iterate person with map. Add key attribute in top element being iterated with map.
+
+
 
 
