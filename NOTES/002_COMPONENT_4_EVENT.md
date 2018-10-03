@@ -26,7 +26,7 @@ handleClick(arg1,...) {
 <button onClick={this.handleClick_2}> Button 2</button>
 
 <button onClick={() => this.handleClick_3()}> Button 3</button>
-//no bind needed for this.
+//no bind needed here if we are passing it as callback nethod.
 ```
 
 3. bind: 
