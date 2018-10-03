@@ -52,14 +52,15 @@ click1={() => this.handleClick_3()} />
     console.log(event.target.value);
   }
 ```
-2. JSX: passing 
+2. JSX: child and component 
 
 2.1. App.js:
-
+```
 <User 
 name={this.state.users[1].name} 
 age={this.state.users[1].age} 
 onClick_my={(event) => this.handleClick_3()} />
+```
 
 2.2. user.js:
 ```
