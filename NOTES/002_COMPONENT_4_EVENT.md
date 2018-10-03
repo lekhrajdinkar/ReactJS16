@@ -1,7 +1,7 @@
 ## EVENTS
 [https://reactjs.org/docs/handling-events.html](https://reactjs.org/docs/handling-events.html)
 
-### A. Update Internal state on click of button
+### EG1: Update Internal state on click of button
 1.  Define handleClick method in Component
 ```
 this.state = {isToggleOn: true}
@@ -27,6 +27,11 @@ handleClick(arg1,...) {
 
 <button onClick={() => this.handleClick_3()}> Button 3</button>
 //no bind needed here if we are passing it as callback nethod.
+
+<User 
+name={this.state.users[1].name} 
+age={this.state.users[1].age} 
+click1={() => this.handleClick_3()} />
 ```
 
 3. bind: 
@@ -38,5 +43,28 @@ handleClick(arg1,...) {
 // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this, arg1, ...);
 ```
+***
 
+### EG2: Recive Event along with data from Child
+1.  Define handleClick method in Component
+```
+ handleClick_3 (event) {
+    console.log(event.target.value);
+  }
+```
+2. JSX: passing 
+```
+2.1. App.js:
+
+<User 
+name={this.state.users[1].name} 
+age={this.state.users[1].age} 
+onClick_my={(event) => this.handleClick_3()} />
+
+2.2. user.js:
+```
+const User = (props) => {  
+        <input type="text" onChange={props.onClick_my}/>);
+}
+```
 
