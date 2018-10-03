@@ -6,9 +6,9 @@ import Calculator from './002_LIFT_UP_PROPS/parent_calculator';
 import registerServiceWorker from './registerServiceWorker';
 
 // 001 - First Component
-//ReactDOM.render(<App1 />, document.getElementById('root')); 
+ReactDOM.render(<App1 />, document.getElementById('root')); 
 
 //002 - Lift up
-ReactDOM.render(<Calculator />, document.getElementById('root'));
+//ReactDOM.render(<Calculator />, document.getElementById('root'));
 
 registerServiceWorker();

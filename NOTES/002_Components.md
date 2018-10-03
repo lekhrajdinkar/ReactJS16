@@ -2,7 +2,9 @@
 
 1. split the UI into independent and reusable pieces.
 2. Custom, reusable HTML elements.
-3. data is stored and handled, using state and props
+3. data is stored and handled, using state and props, pass down data as props to children, lift up data in parent state.
+4. [HOC](https://reactjs.org/docs/higher-order-components.html) - high order component - to wrap component with other functionalities. 
+
 
 ### JSX 
 > Js + XML, react uses JSX for template whick looks like Html but are XML and gets tranformed into javaScript after rendering.
@@ -12,6 +14,7 @@
 4. `return (<div> ... </div>);` - only one root element.
 5. `<react1> abc </react1>` : `abc` will be accessible in `props.children`
 6. state and props are special properties of Component Class and their values get changed then react will rerender Virtual DOM.
+
 ***
 
 ### Type
@@ -19,20 +22,32 @@
 - Also referred to as "presentational", "dumb" or "stateless" components.
 - `const cmp = () => { return <div>some JSX</div> }`
 - purpose : to rendered dynamic content and no does maintain state.
+- only props no state.
+- `ref` does not work. 
 
 #### class-based components 
 - Also referred to as "containers", "smart" or "stateful" components
 - `class Cmp extends Component { render () { return <div>some JSX</div> } } `
 - can be stateless or stateful.
+- can create local reference for JSX ekement and use it inside inside logic part of component.
+```
+ref = {(ref1) = {this.elementRef = ref1}}
+this will create elementRef property in class.
+
+eg: JSX of Class Component.
+<input ref=>
+<CustomElement1 ref=> 
+```
 
 ***
 ### Rendering:
 1. `setState()` is called, it marks the component as dirty.
-2. `render()` method is called and returns a new `virtual DOM structure` of the component.
-3. React changes `real DOM nodes` only if there is difference in Virtual DOM.
+2. `render()` life cycle method is called and returns a new `virtual DOM structure` of the component. it compare the older DOM with new rendered DOM > then update the Real DOM with differences.
+3. React changes `Real DOM nodes` only if there is difference in Virtual DOM.
+![img](https://onedrive.live.com/?cid=4A629DADD0936F0A&id=4A629DADD0936F0A%215366&parId=4A629DADD0936F0A%215353&o=OneUp)
 
 ### Component communications
-1. [state and props](https://github.com/lekhrajdinkar/ReactJS16/blob/master/proj-1/NOTES/002_state_and_props.md)
+1. [state and props](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/002_state_and_props.md)
 
 2. `parent to child` --> Pass down properties and object-references to child component from parent. Child will acces it from its props -`this.props` (Props are Read-Only).
 
