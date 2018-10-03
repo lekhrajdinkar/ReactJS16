@@ -53,7 +53,7 @@ click1={() => this.handleClick_3()} />
   }
 ```
 2. JSX: passing 
-```
+
 2.1. App.js:
 
 <User 
