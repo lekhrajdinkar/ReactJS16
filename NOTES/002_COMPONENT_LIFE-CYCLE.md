@@ -6,9 +6,10 @@
 > 3. render() - update virtual DOM, also renders Child.
 > 4. ComponentDidMount - After Adding component in virtual DOM - `Dont update state / prop here` --> it will call render() - hence performance issue.
 
-![img](https://onedrive.live.com/?cid=4A629DADD0936F0A&id=4A629DADD0936F0A%215355&parId=4A629DADD0936F0A%215353&o=OneUp)
+![img](https://onedrive.live.com/?authkey=%21AO0NmF4ZbZbnTSE&cid=4A629DADD0936F0A&id=4A629DADD0936F0A%215355&parId=4A629DADD0936F0A%215353&o=OneUp)
 
-Life Cycle method exist only for Class Comp as they extends Component class and overrides its life cycle method
+> Life Cycle method exist only for Class Comp as they extends Component class and overrides its life cycle method
+
 ![img](https://onedrive.live.com/?cid=4A629DADD0936F0A&id=4A629DADD0936F0A%215359&parId=4A629DADD0936F0A%215353&o=OneUp)
 
 ### 2. Update Component. 
