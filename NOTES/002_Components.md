@@ -44,7 +44,7 @@ eg: JSX of Class Component.
 1. `setState()` is called, it marks the component as dirty.
 2. `render()` life cycle method is called and returns a new `virtual DOM structure` of the component. it compare the older DOM with new rendered DOM > then update the Real DOM with differences.
 3. React changes `Real DOM nodes` only if there is difference in Virtual DOM.
-![img](https://onedrive.live.com/?cid=4A629DADD0936F0A&id=4A629DADD0936F0A%215366&parId=4A629DADD0936F0A%215353&o=OneUp)
+![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/render.png)
 
 ### Component communications
 1. [state and props](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/002_state_and_props.md)
