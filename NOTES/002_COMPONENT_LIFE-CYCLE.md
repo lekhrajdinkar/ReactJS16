@@ -7,13 +7,13 @@ Life Cycle method exist only for Class Comp as they extends Component class and 
 > 3. render() - update virtual DOM, also renders Child.
 > 4. ComponentDidMount - After Adding component in virtual DOM - `Dont update state / prop here` --> it will call render() - hence performance issue.
 
-![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/lc1.png)
+![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/lc1.PNG)
 
 
 ### 2. Update Component. 
 - If State is changed by parent
 - If Recieved new Props from parent.
-![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/lc2.png)
+![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/lc2.PNG)
 
 - State is changed internally in component. Props are readonly.
-![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/lc3.png)
+![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/lc3.PNG)
