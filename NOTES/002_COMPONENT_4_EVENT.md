@@ -19,10 +19,11 @@ handleClick() {
 2. Add Button in JSX. 
  `<button onClick={this.handleClick}> </button>`
 
-3. bind:
-3.1. Bind in Step 2 it self : `this.handleClick.bind(this)`
+3. bind: 
+[bind in ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)
+> 3.1. Bind in Step 2 it self : `this.handleClick.bind(this)`
 
-3.2 Or Add binding in Contructor :
+> 3.2 Or Add binding in Contructor :
 ```
 // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
