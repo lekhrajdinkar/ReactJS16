@@ -17,3 +17,7 @@ Life Cycle method exist only for Class Comp as they extends Component class and 
 
 - State is changed internally in component. Props are readonly.
 ![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/lc3.PNG)
+
+### 3. Delete Component.
+
+- ComponentwillUnmount
