@@ -10,7 +10,7 @@
 5. `index.html > index.js > ReactDom.render(<app>, getElemenetById(root))`
 
 > Topics:
- ![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/topic.jpg)
+ ![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/topics.jpg)
 
 
 ### Reference:
