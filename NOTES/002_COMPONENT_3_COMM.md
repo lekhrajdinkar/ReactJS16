@@ -24,6 +24,8 @@
 
 ![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/comp1.jpg)
 
+![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/ref2.jpg)
+
 4. setState() in invoked asynchronously.
  > WRong way : setState( {s1=s1+1})
 

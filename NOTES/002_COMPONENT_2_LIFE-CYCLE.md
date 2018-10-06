@@ -21,3 +21,7 @@ Life Cycle method exist only for Class Comp as they extends Component class and 
 ### 3. Delete Component.
 
 - ComponentwillUnmount
+
+***
+
+![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/comp10.jpg)
