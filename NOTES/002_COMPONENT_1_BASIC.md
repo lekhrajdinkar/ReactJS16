@@ -14,6 +14,8 @@
 4. `return (<div> ... </div>);` - only one root element.
 5. `<react1> abc </react1>` : `abc` will be accessible in `props.children`
 6. state and props are special properties of Component Class and their values get changed then react will rerender Virtual DOM.
+7. JSX is not neccessary to write, COuld directly use `React.CreateElement`
+ ![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/comp11.jpg)
 
 ***
 
@@ -53,10 +55,10 @@ eg: JSX of Class Component.
 
 3. `child to parent` -->`lift up state` : Pass down method reference to child component from parent and event in child to manipulate state in Parent.
  > 1. Define js method and assign it to reference - `event1_method`
- ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc1.PNG)
+ ![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc1.PNG)
 
  > 2. Pass down reference as props to child comp - `<User>` here.
- ![](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc2.PNG)
+ ![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/cc2.PNG)
 
  > 3. inside User Comp : 
  ```
