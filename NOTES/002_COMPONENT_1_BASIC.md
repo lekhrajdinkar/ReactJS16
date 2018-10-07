@@ -14,7 +14,7 @@
 4. `return (<div> ... </div>);` - only one root element.
 5. `<react1> abc </react1>` : `abc` will be accessible in `props.children`
 6. state and props are special properties of Component Class and their values get changed then react will rerender Virtual DOM.
-7. JSX is not neccessary to write, COuld directly use `React.CreateElement`
+7. JSX is not neccessary to write, COuld directly use `React.CreateElement`. eg:
  ![img](https://github.com/lekhrajdinkar/ReactJS16/blob/master/NOTES/asset/comp11.jpg)
 
 ***
